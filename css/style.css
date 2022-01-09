@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --bg-color: #22162B;
+    --primary-color: #fff
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    background-color: var(--bg-color) ;
+}
+
+header{
+    margin-top: 10px;
+    padding: 25px;
+    background-color: #724E91;
+    border-radius: 15px 1px;
+}
+.container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    color: var(--primary-color);
+}
+.container button {
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-top: 20px;
+    
+}
+.inputBox{
+    display: flex;
+    position: relative;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+.inputBox label{
+    margin: 5px;
+    text-align: start;
+    font-size: 20px;
+    font-weight: bold;
+    float:right;
+    width: 70%;
+}
+.inputBox input{
+    width: 150px;
+    margin: 5px;
+    float: right;
+    justify-content: end;
+    border-radius: 10px;
+}
+
+.title {
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    text-align: center;
+    user-select: none;
+    color: var(--primary-color);
+}
+
+
+footer{
+    color: var(--primary-color);
+    margin-bottom:5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width: 768px) {
+    header{
+        margin-top: 10px;
+        padding: 15px;
+        background-color: #724E91;
+        border-radius: 15px 1px;
+    }
+    body {
+        min-height: 95vh;
+    }
+
+    footer{
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 425px) {
+    header{
+        margin-top: 10px;
+        padding: 15px;
+        background-color: #724E91;
+        border-radius: 15px 1px;
+    }
+    body {
+        min-height: 80vh;
+    }
+
+    footer{
+        margin-bottom: 0px;
+        margin-top: 60px;
+    }
+    .container {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 375px) {
+    header{
+        margin-top: 10px;
+        padding: 5px;
+        background-color: #724E91;
+        border-radius: 15px 1px;
+        width: 250px;
+        height: 100px;
+    }
+    body {
+        min-height: 70vh;
+    }
+
+    footer{
+        margin-bottom: 0px;
+        margin-top: 40px;
+    }
+    .container {
+        margin-top: 50px;
+    }
+}
